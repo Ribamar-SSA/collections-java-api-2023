@@ -3,6 +3,7 @@ package main.java.generics;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("ALL")
 public class GenericsExempleList {
 	public static void main(String[] args) {
 		// Exemplo sem Generics
@@ -21,6 +22,7 @@ public class GenericsExempleList {
 		}
 
 		// Iterando sobre a lista sem Generics (necessário fazer cast)
+		//a classe object é a superclasse de todas as outras
 		for (Object elemento : listaSemGenerics) {
 			String str = (String) elemento;
 			System.out.println(str);
